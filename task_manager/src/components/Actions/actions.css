@@ -1,0 +1,21 @@
+.action_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.action_items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.action-items span{
+    margin-right: 10px;
+}
+
+.action-items button + button{
+    margin-right: 10px;
+}
+
+

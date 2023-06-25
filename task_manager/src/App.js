@@ -1,11 +1,15 @@
-import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Actions from './Components/Actions/Actions';
+// import Projects from './Components/Projects/Projects';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>React Task Manager</h1>
-    </div>
-  );
-}
+const App = () => {
+ return (
+    <>
+      <Navbar />
+      <Actions />
+      {/* <Projects /> */}
+    </>
+ );
+};
 
 export default App;
