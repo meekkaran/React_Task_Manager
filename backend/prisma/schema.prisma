@@ -1,11 +1,13 @@
-datasource db {
-  provider = "postgresql"
-  url      = "postgresql://postgres@localhost:5432/task_manager"
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-py"
 }
 
-// generator
-generator client {
-  provider             = "prisma-client-py"
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model Task {
@@ -13,3 +15,4 @@ model Task {
   title     String
   status    String
 }
+
