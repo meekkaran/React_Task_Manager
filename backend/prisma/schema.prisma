@@ -1,0 +1,15 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres@localhost:5432/task_manager"
+}
+
+// generator
+generator client {
+  provider             = "prisma-client-py"
+}
+
+model Task {
+  id        Int      @id @default(autoincrement())
+  title     String
+  status    String
+}
