@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .todo-container,
+  .done-container {
+    flex: 1;
+    margin-top: 20px;
+  }
+  
+  .todo-container h2,
+  .done-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .todo-container .task-item,
+  .done-container .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .todo-container .task-item span,
+  .done-container .task-item span {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .todo-container .task-item.done span {
+    text-decoration: line-through;
+  }
+  
+  .todo-container .task-item.done button {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
